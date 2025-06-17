@@ -3,7 +3,7 @@
 @theme {
   --color-border: hsl(var(--border));
   --color-background: hsl(var(--background));
-  --color-background: hsl(var(--foreground));
+  --color-foreground: hsl(var(--foreground));
 
   --color-primary: hsl(var(primary));
   --color-primary-foreground: hsl(var(--primary-foreground));
@@ -22,7 +22,7 @@
   @keyframes float {
     0%,
     100% {
-      transform: tarnslateY(0);
+      transform: translateY(0);
     }
     50% {
       transform: translateY(-10px);
@@ -59,7 +59,7 @@
       opacity: 1;
     }
     100% {
-      transform: rotate(215deg) tarnslateX(-500px);
+      transform: rotate(215deg) translateX(-500px);
       opacity: 0;
     }
   }
@@ -100,7 +100,12 @@
   }
 
   body{
-    @apply bg-background text-foreground transition-colors duration-300;
+    @apply bg-background text-primary-foreground transition-colors duration-300;                  
+
+    /*
+              CHANGED text-foreground -----------> text-primary-foreground 
+     */
+
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
