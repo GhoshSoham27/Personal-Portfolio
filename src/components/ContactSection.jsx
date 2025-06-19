@@ -74,7 +74,7 @@ export const ContactSection = () => {
                             <div className="flex space-x-4 justify-center">
                                 <a href="https://www.linkedin.com/in/soham-ghosh-38a63926a/" target="_blank"><Linkedin/></a>
                                 <a href="https://x.com/Joon_121" target="_blank"><Twitter/></a>
-                                <a href="https://www.instagram.com/sohamfosec" target="_blank"><Instagram/></a>
+                                <a href="https://www.instagram.com/sohamfosec/" target="_blank"><Instagram/></a>
                             </div>
                         </div>
                     </div>
